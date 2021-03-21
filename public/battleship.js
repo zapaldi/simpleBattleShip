@@ -4,5 +4,5 @@
 	   numWarnings++;
 	}
 	alert("All Your Warnings Have Been Used!")
-	console.log ("Howdy Partner")
+	console.log ("End Of battleship.js code")
 
