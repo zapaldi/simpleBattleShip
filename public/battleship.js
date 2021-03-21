@@ -9,5 +9,5 @@
         var isSunk = 0;
 
 	guess = prompt("Ready, aim, fire! (enter a number between 0-6):")
-	document.write ("You entered: " )
+	alert ("You entered: " )
 
