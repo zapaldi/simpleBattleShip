@@ -1,6 +1,6 @@
-	var location1 = 4;
-	var location2 = 5;
-	var location3 = 6;
+	var location1 = Math.floor( Math.random() * 5 );
+        var location2 = location1 + 1;
+        var location3 = location1 + 2;
 
 	var guess;
 	var hits = 0;
@@ -14,8 +14,7 @@
 	   if ( guess < 0 || guess > 6 ) {
 	      alert ("You entered: " + guess)
               alert ( "Invalid Entry. Please enter a number between 0 and 6" )
-	   }
-	   else {
+	   } else {
               guesses = guesses + 1;
 
               if ( guess == location1 || guess == location2 || guess == location3) {
