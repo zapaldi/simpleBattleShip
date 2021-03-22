@@ -12,7 +12,7 @@
 
 	   guess = prompt("Ready, aim, fire! (enter a number between 0-6):")
 	   if ( guess < 0 || guess > 6 ) {
-	      alert ("You entered: " )
+	      alert ("You entered: " + guess)
               alert ( "Invalid Entry. Please enter a number between 0 and 6" )
 	   }
 	   else {
@@ -21,12 +21,12 @@
               if ( guess == location1 || guess == location2 || guess == location3) {
                  alert ( "Direct Hit!" )
 		 hits = hits + 1;
+                 if ( hits == 3 ) {
+		      isSunk = 1;
+		      alert ( "You sunk my battleship")
+	         }
 	      }
 
-              if ( hits == 3 ) {
-		   isSunk = 1;
-		   alert ( "You sunk my battleship")
-	      }
 	   }
 	}
         //end while loop
