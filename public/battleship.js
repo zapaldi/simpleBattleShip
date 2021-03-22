@@ -9,6 +9,7 @@
         var isSunk = 0;
 
 	while ( isSunk == false && guesses < 8 ) {
+
 	   guess = prompt("Ready, aim, fire! (enter a number between 0-6):")
 	   if ( guess < 0 || guess > 6 ) {
 	      alert ("You entered: " )
@@ -18,6 +19,15 @@
               guesses = guesses + 1;
 	      alert ("You entered: " )
               alert ( "You have used " + " guesses." )
+
+              if ( guess == location1 || guess == location2 || guess == location3)
+		   hits = hits + 1;
+
+              if ( hits = 3 ) {
+		   isSunk = 1;
+		   alert ( "You sunk my battleship")
+	      }
 	   }
 	}
+        //end while loop
 
