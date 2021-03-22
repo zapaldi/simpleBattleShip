@@ -17,13 +17,13 @@
 	   }
 	   else {
               guesses = guesses + 1;
-	      alert ("You entered: " )
-              alert ( "You have used " + " guesses." )
 
-              if ( guess == location1 || guess == location2 || guess == location3)
-		   hits = hits + 1;
+              if ( guess == location1 || guess == location2 || guess == location3) {
+                 alert ( "Direct Hit!" )
+		 hits = hits + 1;
+	      }
 
-              if ( hits = 3 ) {
+              if ( hits == 3 ) {
 		   isSunk = 1;
 		   alert ( "You sunk my battleship")
 	      }
