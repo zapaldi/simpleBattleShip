@@ -8,10 +8,11 @@
 
         var isSunk = 0;
 
-	while ( isSunk == false ) {
+	while ( isSunk == false && gueses < 9 ) {
 
 	   guess = prompt("Ready, aim, fire! (enter a number between 0-6):")
 	   if ( guess < 0 || guess > 6 ) {
+              guesses = guesses + 1;
 	      alert ("You entered: " + guess)
               alert ( "Invalid Entry. Please enter a number between 0 and 6" )
 	   } else {
